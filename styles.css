@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #eae7e6;
+  padding: 1rem ;
+  border-bottom: 1px solid #ddd;
+}
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+font-size: 1.3rem;
+font-weight:700;
+}
+
+.topbar .email {
+  color: #00695C;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* .topbar .email .icon {
+  margin-right: 5px;
+} */
+
+/* NAVBAR */
+.navbar {
+  background: #00695C;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav li { margin: 0 1rem; 
+}
+.nav a {
+  display: block;
+  padding: 0.8rem 0;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  font-size: 1.1rem;
+}
+.nav a.active::after,
+.nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: 3px;
+  background: white;
+}
+
+
+/* HERO */
+.hero {
+  background: url('assets/hero/istockphoto-1140829787-612x612.jpg') center/cover no-repeat;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  background-attachment: fixed;
+}
+.hero-overlay {
+  background: rgba(0,0,0,0.4);
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+.btn, .btn-outline {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #00695C;
+  color: white;
+  border: none;
+}
+.btn-primary:hover { background: #004d40; }
+.btn-outline {
+  border: 2px solid #333;
+  color: #333;
+}
+.btn-outline:hover { background: #004d40; color: white; }
+
+/* ABOUT RESEARCHER MICROSCOPE*/
+.about { background:#eae7e6; padding: 4rem 0; }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.about-text h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 1rem; }
+.about-text h3 { margin-bottom: 1rem; font-size: 1.5rem; }
+.about-text p { margin-bottom: 1.5rem; font-size: 1.2rem;; }
+.about-img img { width: 70%; border-radius: 8px;}
+.about-img {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+}
+
+/* SERVICES 3 BIJI ITU*/
+.services { padding: 4rem 0; background: #e1e1e1; text-align: center; }
+.services h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 0.5rem; }
+.services h3 { margin-bottom: 1.2rem; font-size: 1.5rem;}
+.service-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.service-card .overlay {
+  position: absolute;
+  bottom: 0;
+  /* background: rgba(255,255,255,0.95); */
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+}
+.service-card h4 { 
+    margin-bottom: 0.5rem; 
+    font-size: 1.5rem;
+}
+.service-card p { 
+    margin-bottom: 0.5rem; 
+    font-size: 1rem;
+}
+
+/* TEAM MR GODWIN*/
+.team { padding: 4rem 0; background: #eae7e6; text-align: center; }
+.team h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 0.5rem; }
+.team h3 { margin-bottom: 1.2rem; font-size: 1.5rem; color: #666; }
+.team-card {
+  /* background: white; */
+  padding: 1.5rem;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+}
+.team-card img { width: 80%; border-radius: 6px; margin-bottom: 1rem; }
+.team-card h4 { margin-bottom: 0.25rem; font-size: 1.5rem;}
+.team-card .role { font-weight: 600; color: #555; margin-bottom: 0.5rem; font-size: 1.1rem;}
+.team-card p { margin-bottom: 1rem; font-size: 1rem; }
+
+/* EVENTS */
+.light-section { background: #e1e1e1; padding: 6rem 0; text-align: center; }
+.light-section h2 { color: #00695C; margin-bottom: 0.5rem; font-size: 2.2rem;}
+.light-section p {font-size: 1.2rem; }
+
+/* CONTACT */
+.contact { padding: 4rem 0; background: #eae7e6;}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+form { display: flex; flex-direction: column; gap: 1rem; }
+form input, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-info {
+  background: #ddd ;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+.contact-info h3 { color: #00695C; margin-bottom: 0rem; }
+.contact-info p { margin-bottom: 0.5rem; }
+
+
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;            /* space between icon and text */
+  color: #333;
+  text-decoration: none;  /* remove underline from whole link */
+}
+
+.contact-link .icon {
+  font-size: 1.2rem;      /* icon size */
+}
+
+.contact-link .text {
+  text-decoration: underline; /* underline only the text */
+}
+
+.contact-link:hover .text {
+  color: #00695C;         /* change color on hover */
+}
+
+
+.hours .row {
+  display: grid;
+  grid-template-columns: 120px auto; /* left column fixed, right flexible */
+  gap: 1rem; /* spacing between day and time */
+}
+
+.hours .day {
+  font-weight: 400;
+}
+
+.hours .time {
+  text-align: left;
+}
+
+
+
+
+
+/* FOOTER */
+.footer {
+  background: #00695C;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* GRID SYSTEM */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-grid, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
