@@ -1,17 +1,3 @@
-// // Mobile navigation toggle
-// document.addEventListener("DOMContentLoaded", () => {
-//   const navToggle = document.createElement("button");
-//   navToggle.classList.add("nav-toggle");
-//   navToggle.textContent = "☰";
-//   document.querySelector(".navbar .container").appendChild(navToggle);
-
-//   const navMenu = document.querySelector(".nav ul");
-
-//   navToggle.addEventListener("click", () => {
-//     navMenu.classList.toggle("active");
-//   });
-// });
-
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav a");
 
