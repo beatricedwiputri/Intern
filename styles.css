@@ -461,7 +461,7 @@ form button:hover {
     flex-direction: column;   /* stack vertically */
     align-items: flex-start;  /* align to left */
     gap: 0.3rem;              /* small spacing */
-    padding: 0.5rem 1rem;
+    padding: 0.2rem;
   }
 
   .topbar .logo {
