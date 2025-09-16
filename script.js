@@ -25,5 +25,29 @@ window.addEventListener("scroll", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.createElement("button");
+  navToggle.classList.add("nav-toggle");
+  navToggle.textContent = "☰"; // hamburger symbol
+  document.querySelector(".navbar .container").appendChild(navToggle);
+
+  const navMenu = document.querySelector(".nav ul");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
+
+
+// Close mobile nav when a link is clicked
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    const navMenu = document.querySelector(".nav ul");
+    navMenu.classList.remove("active"); // hide menu
+  });
+});
+
+
+
 
 
