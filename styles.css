@@ -365,7 +365,7 @@ form button:hover {
 
 
 /* FOOTER */
-.footer {
+.footer-index {
   background: #00695C;
   color: white;
   text-align: center;
@@ -542,3 +542,67 @@ form button:hover {
   }
 }
 
+/* CTA Section */
+.cta {
+  background: #212122; /* hitam elegan */
+  color: #fff;
+  text-align: center;
+  padding: 6rem 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta .btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.cta .btn:hover {
+  background: #00695C;
+  border-color: #00695C;
+}
+
+/* Footer */
+.footer-team {
+  background: #00695C;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-team p {
+  font-size: 1.3rem;
+  font-weight:700;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
