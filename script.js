@@ -5,13 +5,18 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   let scrollY = window.scrollY;
+  let checkpoint = scrollY + window.innerHeight / 2; // midpoint of viewport
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
 
     // Add a buffer: when 50% of section is visible
-    if (scrollY >= sectionTop - sectionHeight / 2) {
+    // if (scrollY >= sectionTop - sectionHeight / 2) {
+    //   current = section.getAttribute("id");
+    // }
+
+    if (checkpoint >= sectionTop && checkpoint < sectionTop + sectionHeight) {
       current = section.getAttribute("id");
     }
   });
