@@ -535,10 +535,36 @@ form button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display: flex;
+    padding: 1.5rem;
   }
 
-  .profile-content img {
+  .profile-card img {
     width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .profile-info {
+    width: 100%;              /* make text block full width */
+  }
+
+  .profile-info h2 {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;   /* tighter spacing */
+  }
+
+  .profile-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #444;
+  }
+
+  .profile-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;      /* or center if you prefer */
+    padding: 0 1rem;          /* little side padding */
   }
 }
 
