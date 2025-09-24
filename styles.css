@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -11,11 +12,6 @@ body {
   color: #333;
   background: #fafafa;
   line-height: 1.6;
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 
