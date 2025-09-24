@@ -45,6 +45,9 @@ font-weight:700;
   font-size: 1rem;
 }
 
+.topbar .email a:hover{
+  text-decoration: underline;
+}
 
 /* NAVBAR */
 .navbar {
