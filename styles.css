@@ -54,6 +54,7 @@ font-weight:700;
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 .nav ul {
   list-style: none;
@@ -82,6 +83,18 @@ font-weight:700;
   width: 50%;
   height: 3px;
   background: white;
+}
+
+/* Prevent images and videos from stretching wider than the screen */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure no container/section/header/footer exceeds screen width */
+.container, section, header, footer {
+  max-width: 100%;
+  overflow-x: clip; /* prevent sideways scroll if something overflows */
 }
 
 
