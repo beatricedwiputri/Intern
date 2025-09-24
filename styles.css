@@ -22,7 +22,6 @@ body {
   margin: auto;
 }
 
-
 /* TOPBAR */
 .topbar {
   background: #eae7e6;
@@ -45,7 +44,6 @@ font-weight:700;
   text-decoration: none;
   font-size: 1rem;
 }
-
 
 
 /* NAVBAR */
@@ -200,7 +198,7 @@ img, video {
 .about { background:#eae7e6; padding: 4rem 0; }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
   align-items: center;
 }
@@ -257,12 +255,10 @@ img, video {
 .team h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 0.5rem; }
 .team h3 { margin-bottom: 1.2rem; font-size: 1.5rem; color: #666; }
 .team-card {
-  /* background: white; */
   padding: 1.5rem;
-  /* border: 1px solid #ddd; */
   border-radius: 6px;
 }
-.team-card img { width: 80%; border-radius: 6px; margin-bottom: 1rem; }
+.team-card img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
 .team-card h4 { margin-bottom: 0.25rem; font-size: 1.5rem;}
 .team-card .role { font-weight: 600; color: #555; margin-bottom: 0.5rem; font-size: 1.1rem;}
 .team-card p { margin-bottom: 1rem; font-size: 1rem; }
@@ -489,12 +485,14 @@ form button:hover {
 }
 
 
-/* ===== PROFILE PAGE ===== */
+
+
+/* HTML BARU ===== PROFILE PAGE ===== */
 .profile {
   display: flex;
   justify-content: center;
   padding: 5rem 1rem;
-  background: #f7f9fa;
+  background: #eae7e6;
 }
 
 .profile-card {
@@ -624,7 +622,8 @@ h2 {
 
 .footer-team p {
   font-size: 1.3rem;
-  font-weight:700;
+  font-weight:800;
+  margin-bottom: 0.5rem;
 }
 
 .footer-links {
