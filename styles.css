@@ -100,31 +100,6 @@ img, video {
 
 
 /* HERO */
-/* .hero {
-  background: url('assets/hero/istockphoto-1140829787-612x612.jpg') center/cover no-repeat;
-  height: 85vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-
-  background-attachment: fixed;
-}
-.hero-overlay {
-  background: rgba(0,0,0,0.4);
-  width: 100%; height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-text {
-  max-width: 800px;
-  padding: 0 1rem;
-} */
-
 .hero {
   position: relative;
   height: 90vh;
@@ -197,7 +172,7 @@ img, video {
 .btn-outline:hover { background: #004d40; color: white; }
 
 
-/* ABOUT RESEARCHER MICROSCOPE*/
+/* ABOUT */
 .about { background:#eae7e6; padding: 4rem 0; }
 .about-grid {
   display: grid;
@@ -216,7 +191,7 @@ img, video {
 }
 
 
-/* SERVICES 3 BIJI ITU*/
+/* SERVICES */
 .services { padding: 4rem 0; background: #e1e1e1; text-align: center; }
 .services h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 0.5rem; }
 .services h3 { margin-bottom: 2rem; font-size: 1.5rem;}
@@ -253,7 +228,7 @@ img, video {
 }
 
 
-/* TEAM MR GODWIN*/
+/* TEAM */
 .team { padding: 4rem 0; background: #eae7e6; text-align: center; }
 .team h2 { color: #00695C; font-size: 2.2rem; margin-bottom: 0.5rem; }
 .team h3 { margin-bottom: 1.2rem; font-size: 1.5rem; color: #666; }
@@ -261,7 +236,7 @@ img, video {
   padding: 1.5rem;
   border-radius: 6px;
 }
-.team-card img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
+.team-card img { width: 80%; border-radius: 6px; margin-bottom: 1rem; }
 .team-card h4 { margin-bottom: 0.25rem; font-size: 1.5rem;}
 .team-card .role { font-weight: 600; color: #555; margin-bottom: 0.5rem; font-size: 1.1rem;}
 .team-card p { margin-bottom: 1rem; font-size: 1rem; }
@@ -490,7 +465,7 @@ form button:hover {
 
 
 
-/* HTML BARU ===== PROFILE PAGE ===== */
+/* HTML BARU ===== READ MORE TEAM - PROFILE PAGE ===== */
 .profile {
   display: flex;
   justify-content: center;
@@ -504,10 +479,7 @@ form button:hover {
   align-items: flex-start;
   max-width: 1100px;
   width: 100%;
-  background: #fff;
-  border-radius: 16px;
-  padding: 3rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
 }
 
 /* Foto */
@@ -528,6 +500,7 @@ form button:hover {
   font-size: 2.2rem;
   color: #00695C;
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 .profile-info h3 {
@@ -565,6 +538,7 @@ form button:hover {
   .profile-info h2 {
     font-size: 1.6rem;
     margin-bottom: 0.25rem;   /* tighter spacing */
+    margin-top: auto;
   }
 
   .profile-info h3 {
@@ -583,7 +557,7 @@ form button:hover {
 
 /* CTA Section */
 .cta {
-  background: #212122; /* hitam elegan */
+  background: #212122;
   color: #fff;
   text-align: center;
   padding: 6rem 4rem;
@@ -606,7 +580,6 @@ h2 {
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
   transition: 0.3s;
 }
 
@@ -645,4 +618,89 @@ h2 {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+
+
+/* HTML BARU ===== READ MORE SERVICE PAGE ===== */
+.service2 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1rem;
+  background: #eae7e6;
+  height: auto;
+  min-height: auto;
+  overflow: visible;
+}
+
+.service2-card {
+  display: flex;
+  flex-wrap: wrap;      /* allow stacking if too narrow */
+  gap: 2.5rem;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+  padding: 1.5rem;
+  height: auto;         /* grow with content */
+  overflow: visible;
+}
+
+/* Foto */
+.service2-card img {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: scale-down;
+}
+
+/* Konten teks */
+.service2-info {
+  flex: 1;
+}
+
+.service2-info h2 {
+  font-size: 2.2rem;
+  color: #00695C;
+  margin-bottom: 1rem;
+}
+
+.service2-info p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* ===== Responsive: Mobile view ===== */
+@media (max-width: 768px) {
+  .service2-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 1.5rem;
+  }
+
+  .service2-card img {
+    width: 300px;
+  }
+
+  .service2-info {
+    width: 100%;              /* make text block full width */
+  }
+
+  .service2-info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: auto;   
+  }
+
+  .service2-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;      /* or center if you prefer */
+    padding: 0 1rem;          /* little side padding */
+    margin-bottom: 2rem;
+  }
 }
