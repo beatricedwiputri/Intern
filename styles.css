@@ -353,12 +353,37 @@ form button:hover {
 
 
 /* FOOTER */
-.footer-index {
+.footer-team {
   background: #00695C;
-  color: white;
+  color: #fff;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 2rem 0;
 }
+
+.footer-team p {
+  font-size: 1.3rem;
+  font-weight:800;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 
 /* GRID SYSTEM */
 .grid {
@@ -588,39 +613,6 @@ h2 {
   border-color: #00695C;
 }
 
-/* Footer */
-.footer-team {
-  background: #00695C;
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.footer-team p {
-  font-size: 1.3rem;
-  font-weight:800;
-  margin-bottom: 0.5rem;
-}
-
-.footer-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  font-weight: 400;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-
 
 /* HTML BARU ===== READ MORE SERVICE PAGE ===== */
 .service2 {
@@ -819,4 +811,108 @@ h2 {
   margin-bottom: 1rem;
   color: #444;
   text-align: justify;
+}
+
+/* HTML BARU ===== NEWS SECTION ===== */
+/* Hero banner khusus news */
+.news-hero {
+  position: relative;
+  background: url("assets/news/newshero.png") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.news-hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* full overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-hero .hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.news-hero .hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-hero .hero-text p {
+  font-size: 1.2rem;
+}
+
+
+/* News list */
+.news-list {
+  padding: 4rem 1rem;
+  background: #eae7e6;
+}
+
+.news-list h2 {
+  color: #00695C;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.news-list h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 3rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-content .subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.news-content p {
+  margin-bottom: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.news-content a.readmore {
+  color: #212122;
+  text-decoration: underline;
+}
+
+.news-content a.readmore:hover{
+  color: #004d40;
 }
