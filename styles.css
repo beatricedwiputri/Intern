@@ -819,7 +819,7 @@ h2 {
   position: relative;
   background: url("assets/news/newshero.png") center/cover no-repeat;
   background-attachment: fixed;
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
