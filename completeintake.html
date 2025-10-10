@@ -46,34 +46,60 @@
  <!-- SCHEDULE FORM -->
   <section class="schedule">
     <div class="container">
-      <h2 data-aos="fade-up">Meeting Request Form</h2>
-      <h3 data-aos="fade-up" data-aos-delay="200">We look forward to meeting with you</h3>
+      <h2 data-aos="fade-up">Intake Form</h2>
+      <h3 data-aos="fade-up" data-aos-delay="200">Help us serve you better</h3>
 
       <form class="schedule-form" data-aos="fade-up" data-aos-delay="400">
-        <label for="date">Preferred Date <span class="required">*</span></label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="time">Preferred Time <span class="required">*</span></label>
-        <input type="time" id="time" name="time" required>
-
         <label for="name">Full Name <span class="required">*</span></label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
 
         <label for="email">Email Address <span class="required">*</span></label>
         <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-        <label for="phone">Phone Number <span class="required">*</span></label>
-        <input type="tel" id="phone" name="phone" placeholder="+233 xxx xxx xxx" required>
-
-        <label>Service of Interest <span class="required">*</span></label>
+        <label>What is your primary area of interest?<span class="required">*</span></label>
         <div class="checkbox-group">
-          <label><input type="checkbox" name="service" value="population"> Population health research</label>
-          <label><input type="checkbox" name="service" value="policy"> Policy advocacy</label>
-          <label><input type="checkbox" name="service" value="ntds"> Support for neglected tropical diseases (NTDs)</label>
+          <label><input type="checkbox" name="interest" value="NTDs"> Neglected Tropical Diseases</label>
+          <label><input type="checkbox" name="interest" value="Health"> Health Equity</label>
+          <label><input type="checkbox" name="interest" value="Population"> Population Health</label>
+          <label><input type="checkbox" name="interest" value="SDGs"> Sustainable Development Goals (SDGs)</label>
+          <label><input type="checkbox" name="interest" value="Policy"> Policy Advocacy</label>
         </div>
 
-        <label for="message">Message / Notes</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us more..."></textarea>
+        <label for="hear">How did you hear about us?<span class="required">*</span></label>
+        <select id="hear" name="hear" required>
+          <option value="" disabled selected>Select</option>
+          <option value="social">Social Media</option>
+          <option value="referral">Referral</option>
+          <option value="search">Search Engine</option>
+          <option value="event">Event</option>
+          <option value="newsletter">Newsletter</option>
+        </select>
+
+        <label>What type of support are you seeking?<span class="required">*</span></label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="support" value="Consultation"> Consultation</label>
+          <label><input type="checkbox" name="support" value="Research Collaboration"> Research Collaboration</label>
+          <label><input type="checkbox" name="support" value="Policy"> Policy Development</label>
+          <label><input type="checkbox" name="support" value="Funding"> Funding Opportunities</label>
+          <label><input type="checkbox" name="support" value="Training"> Training and Workshops</label>
+        </div>
+
+        <label for="organization">What is your organization type?<span class="required">*</span></label>
+        <select id="organization" name="organization" required>
+          <option value="" disabled selected>Select</option>
+          <option value="nonprofit">Non-profit</Non-profit></option>
+          <option value="government">Government</option>
+          <option value="academic">Academic Institution</option>
+          <option value="private">Private Sector</option>
+          <option value="international">International Organization</option>
+        </select>
+
+        <label for="location">What is your location?</label>
+        <input type="text" id="location" name="location" placeholder="Enter your city or country" required>
+
+
+        <label for="message">Additional questions or comments</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter any additional questions or comments..."></textarea>
 
         <button type="submit" class="btn btn-primary">SUBMIT</button>
       </form>
