@@ -2,19 +2,16 @@ const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav a");
 
 window.addEventListener("scroll", () => {
+  // Only run scroll spy on pages with in-page sections (like index.html)
+  const currentPage = window.location.pathname.split("/").pop();
+  if (currentPage && currentPage !== "index.html" && currentPage !== "") return;
   let current = "";
-
   let scrollY = window.scrollY;
   let checkpoint = scrollY + window.innerHeight / 2; // midpoint of viewport
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
-
-    // Add a buffer: when 50% of section is visible
-    // if (scrollY >= sectionTop - sectionHeight / 2) {
-    //   current = section.getAttribute("id");
-    // }
 
     if (checkpoint >= sectionTop && checkpoint < sectionTop + sectionHeight) {
       current = section.getAttribute("id");
@@ -40,6 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+  });
+
+  // ----- Keep Active Nav Based on Current Page -----
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., 'news.html'
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    const href = link.getAttribute("href");
+
+    // match full page links (news.html, blog.html, etc.)
+    if (href === currentPage || (currentPage === "" && href === "index.html")) {
+      link.classList.add("active");
+    }
   });
 });
 
