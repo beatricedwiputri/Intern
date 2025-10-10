@@ -384,6 +384,16 @@ form button:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  .footer-team {
+    padding-bottom: 3rem; /* add extra safe padding */
+  }
+  .footer-links {
+    flex-direction: column; /* stack links neatly */
+    gap: 0.5rem;
+  }
+}
+
 
 /* GRID SYSTEM */
 .grid {
