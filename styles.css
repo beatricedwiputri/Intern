@@ -149,6 +149,19 @@ img, video {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh; /* slightly shorter for mobile */
+  }
+
+  .hero-video {
+    position: absolute; /* prevents zoom glitch */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 
 /* BUTTONS */
 .btn, .btn-outline {
@@ -1080,6 +1093,26 @@ h2 {
   outline: none;
   border-color: #00695C;
   box-shadow: 0 0 3px rgba(0, 105, 92, 0.3);
+}
+
+
+/* ----- MOBILE (<=768px) ----- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 
